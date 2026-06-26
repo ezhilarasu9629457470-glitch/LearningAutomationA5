@@ -20,7 +20,7 @@ public class HandlingKeyboardOperations {
 		
 	
 		
-		actions.sendKeys(Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, "book",Keys.ENTER);
+		actions.sendKeys(Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, "book",Keys.ENTER).perform();
 		System.out.println("using actions keyboard operation BOOK value is entered in a search textfield");
 		driver.close();
 	}
