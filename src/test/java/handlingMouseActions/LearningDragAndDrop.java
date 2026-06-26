@@ -59,14 +59,14 @@ public class LearningDragAndDrop {
 		
 		//scrollToElement()
 		Thread.sleep(1000);
-		actions.scrollToElement(driver.findElement(By.id("//h2[contains(text(),'Slider')]"))).perform();
+		actions.scrollToElement(driver.findElement(By.xpath("//h2[contains(text(),'Slider')]"))).perform();
 		System.out.println("scrollToElement has done succesfully");
 		
 		//scrollFromOrigin()
-		//Thread.sleep(1000);
-		//WebElement origin=driver.findElement(By.id("//h2[contains(text(),'Tool Tip Text')]"));
-		//actions.scrollFromOrigin(ScrollOrigin.fromElement(origin), 0, 500).perform();
-		//System.out.println("scrollFromOrigin has done succesfully");
+		Thread.sleep(1000);
+		WebElement origin=driver.findElement(By.xpath("//h2[contains(text(),'Drag and Drop')]"));
+		actions.scrollFromOrigin(ScrollOrigin.fromElement(origin), 0, 200).perform();
+		System.out.println("scrollFromOrigin has done succesfully");
 		
 	
 		
