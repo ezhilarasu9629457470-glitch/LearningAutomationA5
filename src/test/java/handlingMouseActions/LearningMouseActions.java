@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
@@ -21,7 +22,7 @@ public class LearningMouseActions {
 		Actions actionsobj=new Actions(driver);
 		//using moveToElement(webelement)
 		actionsobj.moveToElement(driver.findElement(By.xpath("//ul[@class='top-menu']//a[@href='/computers']"))).perform();
-		//using click(webelement)
+		//using click(webelement) with argument
 		actionsobj.click(driver.findElement(By.xpath("//ul[@class='top-menu']//a[@href='/notebooks']"))).perform();
 		//using doubleclick(webelement)
 		
@@ -33,6 +34,6 @@ public class LearningMouseActions {
 
 		System.out.println("execution done succesfully");
 		driver.close();
+		
 	}
-
 }
