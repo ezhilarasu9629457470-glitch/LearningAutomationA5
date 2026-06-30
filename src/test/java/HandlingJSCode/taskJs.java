@@ -7,7 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class task {
+public class taskJs {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
@@ -49,13 +49,13 @@ public class task {
 		System.out.println("email has changed in a disabled element textbox successfully");
 		
 		//scrolldown using js locators
-		Thread.sleep(2000);
+		
 		jsobj.executeScript("arguments[0].scrollIntoView(true)", driver.findElement(By.xpath("//b[text()='Address Information']")));
 		
 		//scroll down using pointer values
-		Thread.sleep(2000);
+		
 		jsobj.executeScript("window.scrollBy(0,500)");
-		Thread.sleep(2000);
+		
 		jsobj.executeScript("window.scrollTo(0,1000)");
 		driver.close();
 
