@@ -1,4 +1,4 @@
-package HandlingAlerts_popUp;
+package LearningPopUP;
 
 import java.time.Duration;
 
